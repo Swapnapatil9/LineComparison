@@ -13,8 +13,23 @@ public class LineComparison {
     x2=2;
     y2=2;
 
-    Integer length=(int)Math.sqrt( (Math.pow((x1-x2),2)+Math.pow((y1-y2),2)) );
-        System.out.println("Length of the line: "+length);
+    Integer length1=(int)Math.sqrt( (Math.pow((x1-x2),2)+Math.pow((y1-y2),2)) );
+        System.out.println("Length of the line: "+length1);
+
+        x1=-5;
+        y1=6;
+
+        x2=2;
+        y2=2;
+
+        Integer length2=(int)Math.sqrt( (Math.pow((x1-x2),2)+Math.pow((y1-y2),2)) );
+        System.out.println("Length of the line: "+length2);
+
+        if(length1.equals(length2))
+        {
+            System.out.println("Both Length are Same");
+        }else
+            System.out.println("Both Length are not Same");
     }
 
 }
